@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+          
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .vid{
+      height: 600px;
+      widows: 700px;
+      border: 1px solid;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    </style>
+    <title>Face detection</title>
+
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <h2>
+    Detecting your face. On your faceCam .
+  </h2>
+
+<div class="vid">
+  <video id="video" width="720" height="520" autoplay muted></video>
+</div>
+    
+    
+   <script src="./app.js"></script>
+</body>
+</html>
